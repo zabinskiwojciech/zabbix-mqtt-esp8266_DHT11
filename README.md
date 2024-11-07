@@ -16,8 +16,10 @@ Po połaczeniu modułu do WiFi dodajemy na nim sam czujnik oraz adres IP brokera
 
    Jeśli potrzebujesz niestandardowej konfiguracji, edytuj plik `/etc/mosquitto/mosquitto.conf` zgodnie z wymaganiami i uruchom ponownie Mosquitto:
 
-   Przechodzimy do ustawień dostępowych Mosquitto aby nasze urządzenia mogły sie do nioego dobić 
+   Przechodzimy do ustawień dostępowych Mosquitto aby nasze urządzenia mogły sie do nioego dobić
+   
    nano /etc/mosquitto/conf.d/default.conf
+
    wklejamy tam :
 
    allow_anonymous true
@@ -31,7 +33,8 @@ Po połaczeniu modułu do WiFi dodajemy na nim sam czujnik oraz adres IP brokera
 
 
 
- - Robimy restart 
+ - Robimy restart
+ - 
    sudo systemctl restart mosquitto
 
 2. **Instalacja Mosquitto MQTT na kliencie Python dla Zabbixa**
