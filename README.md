@@ -38,6 +38,7 @@ Po połaczeniu modułu do WiFi dodajemy na nim sam czujnik oraz adres IP brokera
 
    Zabbix nie obsługuje natywnie MQTT, więc konieczne jest skonfigurowanie klienta Python, który odbierze dane MQTT i przekaże je do Zabbix. Zainstaluj `paho-mqtt` i `zabbix-sender`:
 
+
    sudo apt install -y python3-pip zabbix-sender
    pip3 install paho-mqtt
 
@@ -49,6 +50,7 @@ Po połaczeniu modułu do WiFi dodajemy na nim sam czujnik oraz adres IP brokera
    nano /usr/local/bin/mqtt_to_zabbix.py
 
    wklej do niego poniższy kod:
+
 
 import paho.mqtt.client as mqtt
 import subprocess
